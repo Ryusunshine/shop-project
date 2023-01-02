@@ -4,13 +4,13 @@ import com.shoppingmall.shop.constant.ItemSellStatus;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
 
-@Table(name="item")
+
 @Entity
+@Table(name="item")
 @Getter
 @Setter
 @ToString
@@ -22,7 +22,7 @@ public class Item {
     private Long id; // 상품 코드
 
     @Column(nullable = false, length = 50)
-    private String itemName; // 상품명
+    private String itemNm; // 상품명
 
     @Column(name="price", nullable = false)
     private int price; //가격
